@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: rl_planner
+Version: 0.0.0
+Summary: CogniPlan ROS2 planner
+Maintainer: Yuhong Cao
+License: MIT License
+Requires-Dist: setuptools
+Requires-Dist: sensor_msgs_py
+Requires-Dist: PyYAML
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: summary

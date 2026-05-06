@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.000359] (-) JobUnselected: {'identifier': 'loam_interface'}
+[0.000504] (-) JobUnselected: {'identifier': 'local_planner'}
+[0.000569] (-) JobUnselected: {'identifier': 'sensor_scan_generation'}
+[0.000711] (-) JobUnselected: {'identifier': 'terrain_analysis'}
+[0.000763] (-) JobUnselected: {'identifier': 'terrain_analysis_ext'}
+[0.000798] (-) JobUnselected: {'identifier': 'vehicle_simulator'}
+[0.000873] (-) JobUnselected: {'identifier': 'velodyne_description'}
+[0.000901] (-) JobUnselected: {'identifier': 'velodyne_gazebo_plugins'}
+[0.000937] (-) JobUnselected: {'identifier': 'velodyne_simulator'}
+[0.000965] (-) JobUnselected: {'identifier': 'visualization_tools'}
+[0.001009] (-) JobUnselected: {'identifier': 'waypoint_example'}
+[0.001096] (-) JobUnselected: {'identifier': 'waypoint_rviz_plugin'}
+[0.001132] (rl_planner) JobQueued: {'identifier': 'rl_planner', 'dependencies': OrderedDict()}
+[0.001166] (rl_planner) JobStarted: {'identifier': 'rl_planner'}
+[0.099657] (-) TimerEvent: {}
+[0.200004] (-) TimerEvent: {}
+[0.300316] (-) TimerEvent: {}
+[0.400824] (-) TimerEvent: {}
+[0.501101] (-) TimerEvent: {}
+[0.601382] (-) TimerEvent: {}
+[0.701684] (-) TimerEvent: {}
+[0.802024] (-) TimerEvent: {}
+[0.902372] (-) TimerEvent: {}
+[0.922984] (rl_planner) Command: {'cmd': ['/home/bach/ENTER/envs/ros2-torch/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rl_planner', 'build', '--build-base', '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build', 'install', '--record', '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/media/bach/bach/nav_expl/CogniPlan_humble/src/rl_planner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(ros2-torch)', 'USER': 'bach', 'LC_TIME': 'vi_VN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bach', 'CONDA_SHLVL': '1', 'OLDPWD': '/media/bach/bach/nav_expl/CogniPlan_humble', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'vi_VN.UTF-8', 'MANAGERPID': '2646', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2774', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=58b71ec567dabbaa5100d7dc69faf45f', 'COLORTERM': 'truecolor', '_CE_M': '', 'PYTHONNOUSERSITE': '1', 'PYTHONNOUSITE': '1', '_CONDA_ROOT': '/home/bach/ENTER', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/media/bach/bach/nav_expl/CogniPlan_humble/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bach', 'JOURNAL_STREAM': '8:17893', '_': '/home/bach/ENTER/envs/ros2-torch/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bach', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/bach/ENTER/envs/ros2-torch/bin:/home/bach/.npm-global/bin:/opt/ros/humble/bin:/home/bach/.local/bin:/home/bach/ENTER/condabin:/home/bach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bach-ThinkPad-X1-Carbon-Gen-9:@/tmp/.ICE-unix/2774,unix/bach-ThinkPad-X1-Carbon-Gen-9:/tmp/.ICE-unix/2774', 'INVOCATION_ID': 'e11cb913938d4a5f9bc1ed608a4c631e', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'vi_VN.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'vi_VN.UTF-8', 'TILIX_ID': '13e94933-4e61-497d-a3cf-88e5bb4a3b3a', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ECTTO3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/bach/ENTER/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'vi_VN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'ros2-torch', 'LC_MEASUREMENT': 'vi_VN.UTF-8', '_CONDA_EXE': '/home/bach/ENTER/bin/conda', 'LC_IDENTIFICATION': 'vi_VN.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/bach/ENTER/bin/conda', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=58b71ec567dabbaa5100d7dc69faf45f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/prefix_override:/home/bach/ENTER/envs/ros2-torch/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'vi_VN.UTF-8', 'CONDA_PREFIX': '/home/bach/ENTER/envs/ros2-torch', 'LC_PAPER': 'vi_VN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.002462] (-) TimerEvent: {}
+[1.102821] (-) TimerEvent: {}
+[1.161049] (rl_planner) StderrLine: {'line': b"/home/bach/ENTER/envs/ros2-torch/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[1.161447] (rl_planner) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.202947] (-) TimerEvent: {}
+[1.257330] (rl_planner) StdoutLine: {'line': b'running egg_info\n'}
+[1.272302] (rl_planner) StdoutLine: {'line': b'creating ../../build/rl_planner/rl_planner.egg-info\n'}
+[1.273730] (rl_planner) StdoutLine: {'line': b'writing ../../build/rl_planner/rl_planner.egg-info/PKG-INFO\n'}
+[1.279549] (rl_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/rl_planner/rl_planner.egg-info/dependency_links.txt\n'}
+[1.280308] (rl_planner) StdoutLine: {'line': b'writing entry points to ../../build/rl_planner/rl_planner.egg-info/entry_points.txt\n'}
+[1.280909] (rl_planner) StdoutLine: {'line': b'writing requirements to ../../build/rl_planner/rl_planner.egg-info/requires.txt\n'}
+[1.282571] (rl_planner) StdoutLine: {'line': b'writing top-level names to ../../build/rl_planner/rl_planner.egg-info/top_level.txt\n'}
+[1.283622] (rl_planner) StdoutLine: {'line': b"writing manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'\n"}
+[1.303070] (-) TimerEvent: {}
+[1.331538] (rl_planner) StdoutLine: {'line': b"reading manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'\n"}
+[1.337246] (rl_planner) StdoutLine: {'line': b"writing manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'\n"}
+[1.337808] (rl_planner) StdoutLine: {'line': b'running build\n'}
+[1.338122] (rl_planner) StdoutLine: {'line': b'running build_py\n'}
+[1.338671] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.339846] (rl_planner) StdoutLine: {'line': b'copying rl_planner/agent.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.341299] (rl_planner) StdoutLine: {'line': b'copying rl_planner/exploration_model.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.342802] (rl_planner) StdoutLine: {'line': b'copying rl_planner/expl_planner.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.344787] (rl_planner) StdoutLine: {'line': b'copying rl_planner/generator.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.345901] (rl_planner) StdoutLine: {'line': b'copying rl_planner/navigation_model.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.347046] (rl_planner) StdoutLine: {'line': b'copying rl_planner/nav_planner.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.349212] (rl_planner) StdoutLine: {'line': b'copying rl_planner/node_manager.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.351766] (rl_planner) StdoutLine: {'line': b'copying rl_planner/parameter.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.353117] (rl_planner) StdoutLine: {'line': b'copying rl_planner/plot.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.355754] (rl_planner) StdoutLine: {'line': b'copying rl_planner/prediction_node_manager.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.356977] (rl_planner) StdoutLine: {'line': b'copying rl_planner/quads.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.358271] (rl_planner) StdoutLine: {'line': b'copying rl_planner/utils.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.359955] (rl_planner) StdoutLine: {'line': b'copying rl_planner/__init__.py -> /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner\n'}
+[1.361591] (rl_planner) StdoutLine: {'line': b'running install\n'}
+[1.370848] (rl_planner) StdoutLine: {'line': b'running install_lib\n'}
+[1.391988] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.393046] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/agent.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.394891] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/exploration_model.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.396074] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/expl_planner.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.397288] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/generator.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.398966] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/navigation_model.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.400546] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/nav_planner.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.401998] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/node_manager.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.403131] (-) TimerEvent: {}
+[1.404397] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/parameter.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.406098] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/plot.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.408108] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/prediction_node_manager.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.410045] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/quads.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.411567] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/utils.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.412924] (rl_planner) StdoutLine: {'line': b'copying /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build/lib/rl_planner/__init__.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner\n'}
+[1.415817] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/agent.py to agent.cpython-310.pyc\n'}
+[1.421426] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/exploration_model.py to exploration_model.cpython-310.pyc\n'}
+[1.426081] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/expl_planner.py to expl_planner.cpython-310.pyc\n'}
+[1.431649] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/generator.py to generator.cpython-310.pyc\n'}
+[1.438924] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/navigation_model.py to navigation_model.cpython-310.pyc\n'}
+[1.443213] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/nav_planner.py to nav_planner.cpython-310.pyc\n'}
+[1.451139] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/node_manager.py to node_manager.cpython-310.pyc\n'}
+[1.460327] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/parameter.py to parameter.cpython-310.pyc\n'}
+[1.463164] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/plot.py to plot.cpython-310.pyc\n'}
+[1.469259] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/prediction_node_manager.py to prediction_node_manager.cpython-310.pyc\n'}
+[1.476005] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/quads.py to quads.cpython-310.pyc\n'}
+[1.483899] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/utils.py to utils.cpython-310.pyc\n'}
+[1.491519] (rl_planner) StdoutLine: {'line': b'byte-compiling /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner/__init__.py to __init__.cpython-310.pyc\n'}
+[1.495780] (rl_planner) StdoutLine: {'line': b'running install_data\n'}
+[1.496364] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/ament_index/resource_index/packages\n'}
+[1.497510] (rl_planner) StdoutLine: {'line': b'copying resource/rl_planner -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/ament_index/resource_index/packages\n'}
+[1.499331] (rl_planner) StdoutLine: {'line': b'copying package.xml -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner\n'}
+[1.500834] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/launch\n'}
+[1.501388] (rl_planner) StdoutLine: {'line': b'copying launch/rl_planner.launch.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/launch\n'}
+[1.502591] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/rviz\n'}
+[1.503173] (rl_planner) StdoutLine: {'line': b'copying rviz/rviz.rviz -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/rviz\n'}
+[1.503520] (-) TimerEvent: {}
+[1.505290] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/expl_model\n'}
+[1.506161] (rl_planner) StdoutLine: {'line': b'copying rl_planner/expl_model/checkpoint.pth -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/expl_model\n'}
+[1.603645] (-) TimerEvent: {}
+[1.704057] (-) TimerEvent: {}
+[1.804568] (-) TimerEvent: {}
+[1.904990] (-) TimerEvent: {}
+[2.005341] (-) TimerEvent: {}
+[2.074340] (rl_planner) StdoutLine: {'line': b'copying rl_planner/expl_model/config.yaml -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/expl_model\n'}
+[2.076021] (rl_planner) StdoutLine: {'line': b'copying rl_planner/expl_model/download.sh -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/expl_model\n'}
+[2.077177] (rl_planner) StdoutLine: {'line': b'copying rl_planner/expl_model/generator.pt -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/expl_model\n'}
+[2.089955] (rl_planner) StdoutLine: {'line': b'creating /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/nav_model\n'}
+[2.090513] (rl_planner) StdoutLine: {'line': b'copying rl_planner/nav_model/checkpoint.pth -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/nav_model\n'}
+[2.105793] (-) TimerEvent: {}
+[2.209888] (-) TimerEvent: {}
+[2.310321] (-) TimerEvent: {}
+[2.410737] (-) TimerEvent: {}
+[2.511305] (-) TimerEvent: {}
+[2.611679] (-) TimerEvent: {}
+[2.711983] (-) TimerEvent: {}
+[2.753698] (rl_planner) StdoutLine: {'line': b'copying rl_planner/nav_model/config.yaml -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/nav_model\n'}
+[2.760602] (rl_planner) StdoutLine: {'line': b'copying rl_planner/nav_model/generator.pt -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/nav_model\n'}
+[2.775849] (rl_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.809046] (rl_planner) StdoutLine: {'line': b'Copying ../../build/rl_planner/rl_planner.egg-info to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner-0.0.0-py3.10.egg-info\n'}
+[2.812090] (-) TimerEvent: {}
+[2.821365] (rl_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[2.912217] (-) TimerEvent: {}
+[2.941532] (rl_planner) StdoutLine: {'line': b'Installing expl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner\n'}
+[2.942361] (rl_planner) StdoutLine: {'line': b'Installing nav_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner\n'}
+[2.942912] (rl_planner) StdoutLine: {'line': b'Installing rl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner\n'}
+[2.943834] (rl_planner) StdoutLine: {'line': b"writing list of installed files to '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log'\n"}
+[2.967510] (rl_planner) CommandEnded: {'returncode': 0}
+[2.994844] (rl_planner) JobEnded: {'identifier': 'rl_planner', 'rc': 0}
+[2.995621] (-) EventReactorShutdown: {}
