@@ -41,16 +41,22 @@ def launch_setup(context, *args, **kwargs):
         remappings=[
             ('cloud_in', '/overall_map'),
             ('projected_map', '/ground_truth_map'),
+            ('projected_map_updates', '/ground_truth_map_updates'),
             ('octomap_binary', '/ground_truth_octomap_binary'),
             ('octomap_full', '/ground_truth_octomap_full'),
         ],
         parameters=[
             {'frame_id': 'map'},
-            {'base_frame_id': LaunchConfiguration('base_frame')},
-            {'resolution': 0.4},
-            {'occupancy_min_z': 0.1},
-            {'occupancy_max_z': 1.5},
-            {'sensor_model.max_range': LaunchConfiguration('sensor_range')},
+            # Ground-truth cloud is already in map frame; keep base frame fixed to map
+            # to avoid tf-related clipping.
+            {'base_frame_id': 'map'},
+            {'resolution': 0.3},
+            # Wider z/range so the projected map covers the full scene.
+            {'occupancy_min_z': -2.0},
+            {'occupancy_max_z': 5.0},
+            {'sensor_model.max_range': 100.0},
+            {'compress_map': False},
+            {'incremental_2D_projection': False},
             {'sensor_model.hit': 1.0},
             {'sensor_model.miss': 0.45},
             {'sensor_model.max': 1.0},

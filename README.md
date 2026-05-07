@@ -87,6 +87,24 @@ source install/setup.bash
 ros2 launch vehicle_simulator system_indoor.launch
 ```
 
+Other simulator environments:
+
+```bash
+# forest
+ros2 launch vehicle_simulator system_forest.launch
+
+# tunnel
+ros2 launch vehicle_simulator system_tunnel.launch
+
+# garage
+ros2 launch vehicle_simulator system_garage.launch
+
+# campus
+ros2 launch vehicle_simulator system_campus.launch
+```
+
+Use exactly one simulator launch at a time (do not run multiple `system_*.launch` files concurrently).
+
 ### Terminal B - planner
 
 ```bash
