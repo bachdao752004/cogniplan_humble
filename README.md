@@ -50,9 +50,23 @@ export PYTHONNOUSERSITE=1
 conda activate ros2-torch
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
-source /opt/ros/humble/setup.bash
 
-cd /path/to/CogniPlan_humble
+cd /media/bach/bach/nav_expl/CogniPlan_humble
+rm -rf build install log
+source /opt/ros/humble/setup.bash
+colcon build --packages-select rl_planner
+source install/setup.bash
+```
+
+Daily quick start (copy/paste):
+
+```bash
+conda activate ros2-torch
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
+cd /media/bach/bach/nav_expl/CogniPlan_humble
+rm -rf build install log
+source /opt/ros/humble/setup.bash
 colcon build --packages-select rl_planner
 source install/setup.bash
 ```

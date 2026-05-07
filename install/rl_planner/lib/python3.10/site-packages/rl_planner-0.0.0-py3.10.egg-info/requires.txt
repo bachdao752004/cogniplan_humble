@@ -1,3 +1,0 @@
-PyYAML
-sensor_msgs_py
-setuptools
