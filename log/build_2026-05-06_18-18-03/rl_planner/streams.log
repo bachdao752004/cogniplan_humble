@@ -1,0 +1,25 @@
+[3.777s] Invoking command in '/media/bach/bach/nav_expl/CogniPlan_humble/src/rl_planner': PYTHONPATH=/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rl_planner build --build-base /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build install --record /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log --single-version-externally-managed install_data
+[4.983s] running egg_info
+[4.985s] writing ../../build/rl_planner/rl_planner.egg-info/PKG-INFO
+[4.987s] writing dependency_links to ../../build/rl_planner/rl_planner.egg-info/dependency_links.txt
+[4.989s] writing entry points to ../../build/rl_planner/rl_planner.egg-info/entry_points.txt
+[4.990s] writing requirements to ../../build/rl_planner/rl_planner.egg-info/requires.txt
+[4.991s] writing top-level names to ../../build/rl_planner/rl_planner.egg-info/top_level.txt
+[5.017s] reading manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'
+[5.031s] writing manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'
+[5.032s] running build
+[5.033s] running build_py
+[5.051s] running install
+[5.051s] running install_lib
+[5.092s] running install_data
+[5.096s] copying launch/rl_planner.launch.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/launch
+[5.101s] copying rviz/rviz.rviz -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/rviz
+[5.111s] running install_egg_info
+[5.128s] removing '/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner-0.0.0-py3.10.egg-info' (and everything under it)
+[5.159s] Copying ../../build/rl_planner/rl_planner.egg-info to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner-0.0.0-py3.10.egg-info
+[5.200s] running install_scripts
+[5.263s] Installing expl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+[5.264s] Installing nav_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+[5.267s] Installing rl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+[5.270s] writing list of installed files to '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log'
+[5.336s] Invoked command in '/media/bach/bach/nav_expl/CogniPlan_humble/src/rl_planner' returned '0': PYTHONPATH=/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rl_planner build --build-base /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/build install --record /media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log --single-version-externally-managed install_data

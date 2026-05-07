@@ -1,3 +1,3 @@
-setuptools
-sensor_msgs_py
 PyYAML
+sensor_msgs_py
+setuptools

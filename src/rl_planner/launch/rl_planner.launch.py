@@ -31,6 +31,34 @@ def launch_setup(context, *args, **kwargs):
     )
     nodes.append(octomap_node)
 
+    # Ground-truth octomap instance: convert /overall_map point cloud into a 2D occupancy map
+    # for visualization and coverage reference metrics.
+    octomap_groundtruth_node = Node(
+        package='octomap_server',
+        executable='octomap_server_node',
+        name='octomap_groundtruth',
+        output='screen',
+        remappings=[
+            ('cloud_in', '/overall_map'),
+            ('projected_map', '/ground_truth_map'),
+            ('octomap_binary', '/ground_truth_octomap_binary'),
+            ('octomap_full', '/ground_truth_octomap_full'),
+        ],
+        parameters=[
+            {'frame_id': 'map'},
+            {'base_frame_id': LaunchConfiguration('base_frame')},
+            {'resolution': 0.4},
+            {'occupancy_min_z': 0.1},
+            {'occupancy_max_z': 1.5},
+            {'sensor_model.max_range': LaunchConfiguration('sensor_range')},
+            {'sensor_model.hit': 1.0},
+            {'sensor_model.miss': 0.45},
+            {'sensor_model.max': 1.0},
+            {'sensor_model.min': 0.2},
+        ]
+    )
+    nodes.append(octomap_groundtruth_node)
+
     if task == 'exploration':
         planner_node = Node(
             package='rl_planner',

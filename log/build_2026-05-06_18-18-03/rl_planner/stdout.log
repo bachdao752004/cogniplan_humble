@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/rl_planner/rl_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/rl_planner/rl_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/rl_planner/rl_planner.egg-info/entry_points.txt
+writing requirements to ../../build/rl_planner/rl_planner.egg-info/requires.txt
+writing top-level names to ../../build/rl_planner/rl_planner.egg-info/top_level.txt
+reading manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/rl_planner/rl_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/rl_planner.launch.py -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/launch
+copying rviz/rviz.rviz -> /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/share/rl_planner/rviz
+running install_egg_info
+removing '/media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rl_planner/rl_planner.egg-info to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/python3.10/site-packages/rl_planner-0.0.0-py3.10.egg-info
+running install_scripts
+Installing expl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+Installing nav_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+Installing rl_planner script to /media/bach/bach/nav_expl/CogniPlan_humble/install/rl_planner/lib/rl_planner
+writing list of installed files to '/media/bach/bach/nav_expl/CogniPlan_humble/build/rl_planner/install.log'

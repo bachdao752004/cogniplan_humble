@@ -1,4 +1,4 @@
-#!/home/bach/ENTER/envs/ros2-torch/bin/python3.10
+#!/usr/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'rl-planner==0.0.0','console_scripts','rl_planner'
 import re
 import sys
