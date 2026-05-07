@@ -192,7 +192,74 @@ ROS2 launch logs are saved under:
 ~/.ros/log/
 ```
 
-## 7) Troubleshooting
+## 7) Evaluation scripts
+
+Two evaluators are included under `src/rl_planner/rl_planner/`:
+
+- `eval_exploration.py`
+- `eval_navigation.py`
+
+### 7.1 Exploration evaluation
+
+Computes:
+- coverage (%) over time from `projected_map` vs ground-truth map
+- time-to-70/80/90% coverage
+- path length (`/state_estimation`)
+- waypoint rate (`/way_point`)
+- planner runtime stats (`/runtime`)
+
+Run:
+
+```bash
+python src/rl_planner/rl_planner/eval_exploration.py \
+  --bag bags/exploration_run/exploration_run_0.db3 \
+  --ground-truth-topic /ground_truth_map \
+  --projected-topic /projected_map \
+  --out-prefix exploration_eval
+```
+
+Outputs:
+- `exploration_eval_coverage.csv`
+- `exploration_eval_summary.json`
+
+### 7.2 Navigation evaluation
+
+Computes:
+- success rate
+- time-to-goal
+- path length to goal
+- final goal error
+- waypoint oscillation count (stability proxy)
+
+Run:
+
+```bash
+python src/rl_planner/rl_planner/eval_navigation.py \
+  --bag bags/navigation_run/navigation_run_0.db3 \
+  --goal-topic /goal_pose \
+  --odom-topic /state_estimation \
+  --waypoint-topic /way_point \
+  --goal-threshold 2.0 \
+  --timeout 120 \
+  --out-prefix navigation_eval
+```
+
+Outputs:
+- `navigation_eval_episodes.csv`
+- `navigation_eval_summary.json`
+
+### 7.3 Plotting exploration and navigation
+
+```bash
+# Exploration: prefers *_coverage.csv + *_summary.json (from eval_exploration.py).
+# Falls back to legacy metrics_*.txt if coverage files are absent.
+python src/rl_planner/rl_planner/plot.py --mode exploration --input-dir .
+
+# Navigation: uses *_episodes.csv (from eval_navigation.py)
+python src/rl_planner/rl_planner/plot.py --mode navigation --input-dir .
+```
+
+## 8) Troubleshooting
 
 - `ModuleNotFoundError: No module named 'torch'`
   - Install torch in active env:
